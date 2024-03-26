@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Matrícula</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+<div class="bg-white p-8 rounded-lg shadow-md w-96">
+    <h1 class="text-2xl font-semibold text-center mb-6">Confirmación de Matrícula</h1>
+    <hr>
+    <div class="mt-6">
+        <h3 class="text-lg font-semibold mb-2">Curso seleccionado:</h3>
+        <p class="mb-4"><strong>Curso:</strong> <%= curso %></p>
+
+        <h3 class="text-lg font-semibold mb-2">Medio de pago seleccionado:</h3>
+        <p class="mb-4"><strong>Medio de Pago:</strong> <%= medioPago %></p>
+
+        <h3 class="text-lg font-semibold mb-2">Datos de confirmación:</h3>
+        <p class="mb-4">¡Su matrícula ha sido confirmada! Los siguientes son los detalles de su matrícula:</p>
+
+        <ul class="list-disc pl-6">
+            <li><strong>Curso:</strong> <%= curso %></li>
+            <li><strong>Total a pagar:</strong> S/. <%= totalpagar %></li>
+            <li><strong>Medio de Pago:</strong> <%= medioPago %></li>
+        </ul>
+    </div>
+</div>
+</body>
+
+</html>
+
